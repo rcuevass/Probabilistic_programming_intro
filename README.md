@@ -1,2 +1,2 @@
-# Probabilistic_programming_intro
+# Probabilistic programming intro
 Basic notebooks to perform probabilistic programming
