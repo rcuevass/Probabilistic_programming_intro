@@ -10,3 +10,6 @@ Putting this in context, if you think of data science as a spectrum that goes fr
 There are several libraries that allow one to do probabilistic programming. The ones I am aware of are PyMC3 (Python), Stan (Python and R) and emcee (Python). In what follows I will show a simple example of how to use PyMC3 for classification. This is part of that Probabilistic Programming MeetUp I mentioned earlier (yes, we have coding sessions!). For this example I will use the famous Kaggle Titanic dataset.
 
  
+```
+import os
+```
