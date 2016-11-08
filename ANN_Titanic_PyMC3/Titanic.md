@@ -10,7 +10,15 @@ Putting this in context, if you think of data science as a spectrum that goes fr
 
 There are several libraries that allow one to do probabilistic programming. Some of there are [PyMC3] (https://pymc-devs.github.io/pymc3/) (Python), [Stan] (http://mc-stan.org/) (Python and R) and [Emcee] (http://dan.iel.fm/emcee/current/) (Python). In what follows I will show a simple example of how to use PyMC3 for classification. This example is part of a small project we have working on in that Probabilistic Programming MeetUp I mentioned earlier (yes, we have coding sessions!). For this example I will use the famous [Kaggle Titanic dataset.] (https://www.kaggle.com/c/titanic)
 
- 
+As usual, we begin by importing the needed libraries for our project
+
 ```
-import os
+import numpy as np
+import pandas as pd
+import matplotlib.pylab as plt
+import pymc3 as pm
+import seaborn
+
+import theano.tensor as T
+import theano
 ```
