@@ -30,10 +30,6 @@ I will assume you have already download the data, so we proceed right away to re
 dfTrain = pd.read_csv(path_+'train.csv')
 ```
 
-We now take a look at the number of missing data in our dataframe:
-
-```
-dfTrain.isnull().sum()
-```
+After executing  ```dfTrain.isnull().sum()``` we find that the field *Age* has 177 *NaN's*, *Cabin* is missing 687 records and *Embarked* is missing 2. 
 
 
