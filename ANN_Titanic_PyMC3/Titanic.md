@@ -15,10 +15,17 @@ As usual, we begin by importing the needed libraries for our project
 ```
 import numpy as np
 import pandas as pd
+%matplotlib inline
 import matplotlib.pylab as plt
-import pymc3 as pm
 import seaborn
 
+import pymc3 as pm
 import theano.tensor as T
 import theano
+```
+
+I will assume you have already download the data, so we proceed right away to read them into a dataframe 
+
+```
+dfTrain = pd.read_csv(path_+'train.csv')
 ```
