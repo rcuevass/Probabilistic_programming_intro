@@ -1,4 +1,4 @@
-# An introduction to probabilistic programming 
+# A brief introduction to probabilistic programming 
 #### by Rogelio Cuevas
 
 
