@@ -1,5 +1,6 @@
-# An introduction to probabilistic programming by Rogelio Cuevas
-Nov 12nd, 2016
+# An introduction to probabilistic programming 
+## by Rogelio Cuevas
+## Nov 12nd, 2016
 
 This fast-changing world demands that professionals keep up with the changes and new trends in their fields. This is clearly not an exception for data scientists. As many other data scientists, I have found MeetUps to be an invaluable resource to be on top of things. Only in the Greater Toronto Area there are over 40 data science and engineering related MeetUps that I find interesting. Needless to say it is practically impossible for me to attend all of them but there are few that keep me quite busy. One of them is the one focused on Probabilistic Programming.  
 
