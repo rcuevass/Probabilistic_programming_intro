@@ -28,6 +28,11 @@ I will assume you have already download the data, so we proceed right away to re
 dfTrain = pd.read_csv(path_+'train.csv')
 ```
 
-After executing  ```dfTrain.isnull().sum()``` we find that the field *Age* has 177 *NaN's*, *Cabin* is missing 687 records and *Embarked* is missing 2. 
+After executing  ```dfTrain.isnull().sum()``` we find that the field *Age* has 177 *NaN's*, *Cabin* is missing 687 records and *Embarked* is missing 2. As we will see shortly, *Age* is one of the features that we will use for our model. Since those 177 *NaN's* in the *Age* column represent 20% of the total records, it would not be wise to get rid of them. For the sake of simplicity let's replace the missing values with the *mean* of the non-missing rows.
+
+```
+meanAge = round(dfTrain.Age.mean(skipna=True),0)
+dfTrain['Age'] = dfTrain['Age'].fillna(meanAge) 
+```
 
 
