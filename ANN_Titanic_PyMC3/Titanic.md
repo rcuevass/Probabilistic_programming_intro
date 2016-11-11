@@ -8,7 +8,7 @@ Putting this in context, if you think of data science as a spectrum that spans f
 
 There are several libraries that allow one to do probabilistic programming. Some of them are [PyMC3] (https://pymc-devs.github.io/pymc3/) (Python), [Stan] (http://mc-stan.org/) (Python and R) and [Emcee] (http://dan.iel.fm/emcee/current/) (Python). In what follows I will show a simple example of how to use PyMC3 for classification. This example is part of a small project we have been working on in that [Toronto Probabilistic Programming Meetup] (http://www.meetup.com/Toronto-Probabilistic-Programming-Meetup/) I mentioned earlier (yes, we have coding sessions!). For this example I will use the famous [Kaggle Titanic dataset] (https://www.kaggle.com/c/titanic) and [PyMC3] (https://pymc-devs.github.io/pymc3/) to develop the model.
 
-### I. Preparatory steps: Reading and cleaning
+## I. Preparatory steps: Reading and cleaning
 
 As usual, we begin by importing the needed libraries for our project
 
@@ -48,7 +48,7 @@ df = pd.get_dummies(df)
 
 Notice what the effect of the last command. We have turn the original *Pclass* and *Sex* columns into two and three numerical columns, respectively: *Pclass_1*, *Pclass_2*, *Pclass_3* and *Sex_female*, *Sex_male*
 
-### II. Visualization: Heatmap
+## II. Visualization: Heatmap
 
 Let's get the correlation matrix corresponding to our dataframe in order to visualize a heatmap
 
