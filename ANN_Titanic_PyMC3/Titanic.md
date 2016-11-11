@@ -56,6 +56,7 @@ Let's get the correlation matrix corresponding to our dataframe in order to visu
 corrMatr = df.corr()
 ```
 ![heatmap]
+(https://octodex.github.com/images/yaktocat.png)
 
 
 
