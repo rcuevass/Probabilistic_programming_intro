@@ -25,14 +25,26 @@ import theano
 I will assume you have already download the data, so we proceed right away to read them into a dataframe 
 
 ```
-dfTrain = pd.read_csv(path_+'train.csv')
+df = pd.read_csv(path_+'train.csv')
 ```
 
 After executing  ```dfTrain.isnull().sum()``` we find that the field *Age* has 177 *NaN's*, *Cabin* is missing 687 records and *Embarked* is missing 2. As we will see shortly, *Age* is one of the features that we will use for our model. Since those 177 *NaN's* in the *Age* column represent 20% of the total records, it would not be wise to get rid of them. For the sake of simplicity let's replace the missing values with the *mean* of the non-missing rows.
 
 ```
-meanAge = round(dfTrain.Age.mean(skipna=True),0)
-dfTrain['Age'] = dfTrain['Age'].fillna(meanAge) 
+meanAge = round(df.Age.mean(skipna=True),0)
+df['Age'] = df['Age'].fillna(meanAge) 
 ```
+
+To keep things simple we choose a reduced set of features and create dummy variables out of them after turning the categorical *Pclass* variable into string type.
+
+```
+features = ['Survived','Pclass','Sex','Age','Fare']
+df = df[features]
+df.Pclass = df.Pclass.astype(str)
+df = pd.get_dummies(df)
+```
+
+Notice what the effect of the last command. We have turn the original *Pclass* and *Sex* columns into two and three numerical columns, respectively: *Pclass_1*, *Pclass_2*, *Pclass_3* and *Sex_female*, *Sex_male*
+
 
 
